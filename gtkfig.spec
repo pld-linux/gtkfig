@@ -23,6 +23,15 @@ It is commercial software, but you can get demoversion at www.smartdraw.com.
 
 My idea is that GTKFIG would serve for same purpose as SmartDraw. 
 
+%description -l pl
+GTKFIG jest narzêdziem do rysowania wykresów.
+Mo¿na go wykorzystaæ do przygotowywania grafów, diagramów przedstawiaj±cych
+struktury danych itd. Ma byæ substytutem programu xfig, którego interfejs -- 
+w opinii autora -- jest przestarza³y. Program ten jest równie¿ wzorowany na 
+SmartDraw dla Windows (program ten jest komercyjny, ale wersjê demo mo¿na 
+uzyskaæ z www.smartdraw.com).
+GTKFIG ma s³u¿yæ temu samemu, co SmartDraw.
+
 %prep
 %setup -q
 
