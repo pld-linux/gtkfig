@@ -36,7 +36,7 @@ samemu, co SmartDraw.
 %setup -q
 
 %build
-autoconf
+%{__autoconf}
 CXXFLAGS="%{rpmcflags} -fpermissive"
 %configure
 %{__make}
