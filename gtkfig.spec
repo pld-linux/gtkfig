@@ -8,7 +8,9 @@ Group:		X11/Applications/Graphics
 Group(de):	X11/Applikationen/Grafik
 Group(pl):	X11/Aplikacje/Grafika
 Source0:	ftp://k332.feld.cvut.cz/pub/local/lemming/gtkfig/%{name}-%{version}.tar.gz
+Source1:	%{name}.desktop
 BuildRequires:	gtk+-devel >= 1.2.0
+BuildRequires:	libstdc++-devel
 URL:		http://k332.feld.cvut.cz/~lemming/projects/gtkfig.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -44,7 +46,11 @@ CXXFLAGS="%{?debug:-g -O0}%{!?debug:$RPM_OPT_FLAGS} -fpermissive"
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_applnkdir}/Graphics
+
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
+
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Graphics
 
 gzip -9nf AUTHORS ChangeLog HINTS NEWS README TODO
 
@@ -55,3 +61,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.gz
 %attr(755,root,root) %{_bindir}/*
+%{_applnkdir}/Graphics/%{name}.desktop
