@@ -1,4 +1,4 @@
-Summary:	GTKFig
+Summary:	GTKFig figure-drawing tools
 Summary(pl):	GTKFig
 Name:		gtkfig
 Version:	0.7.0
@@ -6,11 +6,11 @@ Release:	1
 Copyright:	GPL
 Group:		X11/Graphics
 Group(pl):	X11/Grafika
-Source:		ftp://k332.feld.cvut.cz/pub/local/lemming/%name/current.tgz
-BuildRequires:	gtk+
+Source:		ftp://k332.feld.cvut.cz/pub/local/lemming/gtkfig/%{name}-%{version}.tar.gz
+BuildRequires:	gtk+-devel >= 1.2.0
 Buildroot:	/tmp/%{name}-%{version}-root
 
-%define	_prefix	/usr/X11R6
+%define		_prefix		/usr/X11R6
 
 %description
 GTKFIG is a figure drawing tool. 
@@ -23,20 +23,17 @@ It is commercial software, but you can get demoversion at www.smartdraw.com.
 
 My idea is that GTKFIG would serve for same purpose as SmartDraw. 
 
-%description -l pl
-
 %prep
 %setup -q
 
-#%patch
-
 %build
-./configure --prefix=%{_prefix}
-make RPM_OPT_FLAGS="$RPM_OPT_FLAGS"
+LDFLAGS="-s"; export LDFLAGS
+%configure
+make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make prefix=$RPM_BUILD_ROOT%{_prefix} install
+make DESTDIR=$RPM_BUILD_ROOT install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
