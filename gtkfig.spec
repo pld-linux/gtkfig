@@ -49,13 +49,11 @@ install -d $RPM_BUILD_ROOT%{_applnkdir}/Graphics
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Graphics
 
-gzip -9nf AUTHORS ChangeLog HINTS NEWS README TODO
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc AUTHORS ChangeLog HINTS NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
 %{_applnkdir}/Graphics/%{name}.desktop
