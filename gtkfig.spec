@@ -5,8 +5,6 @@ Version:	0.7.0
 Release:	2
 License:	GPL
 Group:		X11/Applications/Graphics
-Group(de):	X11/Applikationen/Grafik
-Group(pl):	X11/Aplikacje/Grafika
 Source0:	ftp://k332.feld.cvut.cz/pub/local/lemming/gtkfig/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 URL:		http://k332.feld.cvut.cz/~lemming/projects/gtkfig.html
