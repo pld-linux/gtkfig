@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	ftp://k332.feld.cvut.cz/pub/local/lemming/gtkfig/%{name}-%{version}.tar.gz
+# Source0-md5:	65325197be92e9bf40c864780da720ff
 Source1:	%{name}.desktop
 URL:		http://k332.feld.cvut.cz/~lemming/projects/gtkfig.html
 BuildRequires:	autoconf
