@@ -8,7 +8,7 @@ Group:		X11/Graphics
 Group(pl):	X11/Grafika
 Source:		ftp://k332.feld.cvut.cz/pub/local/lemming/gtkfig/%{name}-%{version}.tar.gz
 BuildRequires:	gtk+-devel >= 1.2.0
-Buildroot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 
