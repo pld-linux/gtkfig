@@ -40,7 +40,7 @@ SmartDraw.
 %setup -q
 
 %build
-CXXFLAGS="%{?debug:-g -O0}%{!?debug:$RPM_OPT_FLAGS} -fpermissive"
+CXXFLAGS="%{rpmcflags} -fpermissive"
 %configure
 %{__make}
 
