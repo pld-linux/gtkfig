@@ -38,6 +38,7 @@ SmartDraw.
 %setup -q
 
 %build
+CXXFLAGS="%{?debug:-g -O0}%{!?debug:$RPM_OPT_FLAGS} -fpermissive"
 %configure
 %{__make}
 
@@ -45,10 +46,12 @@ SmartDraw.
 rm -rf $RPM_BUILD_ROOT
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
 
+gzip -9nf AUTHORS ChangeLog HINTS NEWS README TODO
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc
-#%attr(,,)
+%doc *.gz
+%attr(755,root,root) %{_bindir}/*
