@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=GTKFig
 Comment=GTKFig - figure-drawing tools
-Comment[pl]=GTKFig - narzedzie do rysowania figur
+Comment[pl]=GTKFig - narzędzie do rysowania figur
 Exec=gtkfig
 Terminal=0
 Type=Application
