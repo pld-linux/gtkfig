@@ -13,7 +13,6 @@ BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 GTKFIG is a figure drawing tool. It can be used to draw flow-charts,
