@@ -1,5 +1,5 @@
 Summary:	GTKFig figure-drawing tools
-Summary(pl):	GTKFig - narzêdzia do rysowania wykresów
+Summary(pl.UTF-8):   GTKFig - narzÄ™dzia do rysowania wykresÃ³w
 Name:		gtkfig
 Version:	0.7.0
 Release:	2
@@ -23,13 +23,13 @@ have inspired by was SmartDraw for MS Windows (it is commercial
 software, but you can get demoversion at http://www.smartdraw.com/).
 My idea is that GTKFIG would serve for same purpose as SmartDraw.
 
-%description -l pl
-GTKFIG jest narzêdziem do rysowania wykresów. Mo¿na go wykorzystaæ do
-przygotowywania grafów, diagramów przedstawiaj±cych struktury danych
-itd. Ma byæ substytutem programu xfig, którego interfejs - w opinii
-autora - jest przestarza³y. Program ten jest równie¿ wzorowany na
-SmartDraw dla Windows (program ten jest komercyjny, ale wersjê demo
-mo¿na uzyskaæ z http://www.smartdraw.com/). GTKFIG ma s³u¿yæ temu
+%description -l pl.UTF-8
+GTKFIG jest narzÄ™dziem do rysowania wykresÃ³w. MoÅ¼na go wykorzystaÄ‡ do
+przygotowywania grafÃ³w, diagramÃ³w przedstawiajÄ…cych struktury danych
+itd. Ma byÄ‡ substytutem programu xfig, ktÃ³rego interfejs - w opinii
+autora - jest przestarzaÅ‚y. Program ten jest rÃ³wnieÅ¼ wzorowany na
+SmartDraw dla Windows (program ten jest komercyjny, ale wersjÄ™ demo
+moÅ¼na uzyskaÄ‡ z http://www.smartdraw.com/). GTKFIG ma sÅ‚uÅ¼yÄ‡ temu
 samemu, co SmartDraw.
 
 %prep
