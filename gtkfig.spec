@@ -1,5 +1,5 @@
 Summary:	GTKFig figure-drawing tools
-Summary(pl.UTF-8):   GTKFig - narzędzia do rysowania wykresów
+Summary(pl.UTF-8):	GTKFig - narzędzia do rysowania wykresów
 Name:		gtkfig
 Version:	0.7.0
 Release:	2
