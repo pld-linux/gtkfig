@@ -5,5 +5,4 @@ Comment[pl]=GTKFig - narzędzie do rysowania figur
 Exec=gtkfig
 Terminal=false
 Type=Application
-Encoding=UTF-8
 # vi: encoding=utf-8
